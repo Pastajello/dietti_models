@@ -1,5 +1,3 @@
-library dietti_models;
-
 import 'package:json_annotation/json_annotation.dart';
 
 import 'diet_type.dart';

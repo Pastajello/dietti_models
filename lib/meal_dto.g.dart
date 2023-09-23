@@ -7,7 +7,7 @@ part of 'meal_dto.dart';
 // **************************************************************************
 
 MealDTO _$MealDTOFromJson(Map<String, dynamic> json) => MealDTO(
-      MealDTOName: json['MealDTOName'] as String?,
+      mealName: json['mealName'] as String?,
       dishName: json['dishName'] as String?,
       ingredients: (json['ingredients'] as List<dynamic>?)
           ?.map((e) => IngredientDTO.fromJson(e as Map<String, dynamic>))
@@ -16,7 +16,7 @@ MealDTO _$MealDTOFromJson(Map<String, dynamic> json) => MealDTO(
     )..instruction = json['instruction'] as String?;
 
 Map<String, dynamic> _$MealDTOToJson(MealDTO instance) => <String, dynamic>{
-      'MealDTOName': instance.MealDTOName,
+      'mealName': instance.mealName,
       'kcal': instance.kcal,
       'dishName': instance.dishName,
       'instruction': instance.instruction,
