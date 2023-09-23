@@ -4,35 +4,35 @@ import 'package:json_annotation/json_annotation.dart';
 
 import 'diet_type.dart';
 
-part 'create_diet_data.g.dart';
+part 'create_diet_data_dto.g.dart';
 
 @JsonSerializable()
-class CreateDietData {
+class CreateDietDataDTO {
   DietType selectedDietType;
   int selectedCaloreies;
   int selectedDays;
 
-  CreateDietData(
+  CreateDietDataDTO(
       {required this.selectedDietType,
       required this.selectedCaloreies,
       required this.selectedDays});
 
-  factory CreateDietData.fromJson(Map<String, dynamic> json) =>
-      _$CreateDietDataFromJson(json);
+  factory CreateDietDataDTO.fromJson(Map<String, dynamic> json) =>
+      _$CreateDietDataDTOFromJson(json);
 
-  Map<String, dynamic> toJson() => _$CreateDietDataToJson(this);
+  Map<String, dynamic> toJson() => _$CreateDietDataDTOToJson(this);
 
-  CreateDietData withDietType(DietType type) {
+  CreateDietDataDTO withDietType(DietType type) {
     selectedDietType = type;
     return this;
   }
 
-  CreateDietData withCaloeries(int calories) {
+  CreateDietDataDTO withCaloeries(int calories) {
     selectedCaloreies = calories;
     return this;
   }
 
-  CreateDietData withDays(int days) {
+  CreateDietDataDTO withDays(int days) {
     selectedDays = days;
     return this;
   }

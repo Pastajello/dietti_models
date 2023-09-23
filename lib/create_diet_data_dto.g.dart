@@ -1,20 +1,20 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'create_diet_data.dart';
+part of 'create_diet_data_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-CreateDietData _$CreateDietDataFromJson(Map<String, dynamic> json) =>
-    CreateDietData(
+CreateDietDataDTO _$CreateDietDataDTOFromJson(Map<String, dynamic> json) =>
+    CreateDietDataDTO(
       selectedDietType:
           $enumDecode(_$DietTypeEnumMap, json['selectedDietType']),
       selectedCaloreies: json['selectedCaloreies'] as int,
       selectedDays: json['selectedDays'] as int,
     );
 
-Map<String, dynamic> _$CreateDietDataToJson(CreateDietData instance) =>
+Map<String, dynamic> _$CreateDietDataDTOToJson(CreateDietDataDTO instance) =>
     <String, dynamic>{
       'selectedDietType': _$DietTypeEnumMap[instance.selectedDietType]!,
       'selectedCaloreies': instance.selectedCaloreies,
