@@ -13,12 +13,11 @@ MealDTO _$MealDTOFromJson(Map<String, dynamic> json) => MealDTO(
           ?.map((e) => IngredientDTO.fromJson(e as Map<String, dynamic>))
           .toList(),
       kcal: json['kcal'] as int? ?? 0,
-    )..instruction = json['instruction'] as String?;
+    );
 
 Map<String, dynamic> _$MealDTOToJson(MealDTO instance) => <String, dynamic>{
       'mealName': instance.mealName,
       'kcal': instance.kcal,
       'dishName': instance.dishName,
-      'instruction': instance.instruction,
       'ingredients': instance.ingredients,
     };

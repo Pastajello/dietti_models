@@ -8,7 +8,6 @@ class MealDTO {
   String? mealName;
   late int kcal;
   String? dishName;
-  String? instruction;
   List<IngredientDTO>? ingredients;
 
   MealDTO({this.mealName, this.dishName, this.ingredients, this.kcal = 0});
