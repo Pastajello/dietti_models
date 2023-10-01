@@ -22,6 +22,7 @@ Map<String, dynamic> _$CreateDietDataDTOToJson(CreateDietDataDTO instance) =>
     };
 
 const _$DietTypeEnumMap = {
+  DietType.carnivore: 'carnivore',
   DietType.vegan: 'vegan',
   DietType.vegetarian: 'vegetarian',
   DietType.pescatarian: 'pescatarian',
