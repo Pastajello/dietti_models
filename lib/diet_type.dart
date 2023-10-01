@@ -1,4 +1,5 @@
 enum DietType {
+  carnivore,
   vegan,
   vegetarian,
   pescatarian,
